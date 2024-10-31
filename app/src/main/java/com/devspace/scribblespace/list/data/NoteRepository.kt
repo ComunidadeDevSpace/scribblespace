@@ -5,9 +5,11 @@ import com.devspace.scribblespace.common.local.LocalDataSource
 import com.devspace.scribblespace.common.local.NoteEntity
 import com.devspace.scribblespace.common.model.NoteData
 import com.devspace.scribblespace.common.remote.RemoteDataSource
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 
 class NoteRepository private constructor(
